@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:quran_app/provider/quran_csv_provider.dart';
+import 'package:quran_app/util/hive_box.dart';
+import 'package:quran_app/util/value_notifier.dart';
+
+Future<void> setTransSheet(BuildContext context) {
+  return showModalBottomSheet(
+    showDragHandle: true,
+    useSafeArea: true,
+    isScrollControlled: true,
+    context: context,
+    builder: (context) {
+      return Builder(builder: (context) {
+        final quranCsv = Provider.of<QuranCsv>(context);
+        return Container(
+          padding: const EdgeInsets.all(15),
+          width: double.infinity,
+          height: MediaQuery.of(context).size.height * 0.6,
+          child: Scrollbar(
+            child: Column(
+              spacing: 10,
+              children: [
+                const Text("Select Translation"),
+                ValueListenableBuilder(
+                  valueListenable: turnOffTrans,
+                  builder: (context, turnOffTransValue, child) =>
+                      SwitchListTile.adaptive(
+                    value: turnOffTransValue,
+                    title: Text("Turn OFF Translation"),
+                    onChanged: (value) {
+                      turnOffTrans.value = !turnOffTrans.value;
+                      settings.put("turnOffTrans", turnOffTrans.value);
+                    },
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    //shrinkWrap: true,
+                    itemCount: quranCsv.transName.length,
+                    itemBuilder: (context, index) {
+                      return Card(
+                        child: RadioListTile.adaptive(
+                          value: quranCsv.transName.elementAt(index),
+                          groupValue: quranCsv.currentQuranTrans,
+                          title: Text(
+                            quranCsv.transName.elementAt(index),
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          subtitle: Text(
+                            quranCsv.transLang.elementAt(index),
+                            style: TextStyle(color: Colors.red),
+                          ),
+                          onChanged: (value) {
+                            quranCsv.setChangeTrans(value.toString());
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                )
+              ],
+            ),
+          ),
+        );
+      });
+    },
+  );
+}

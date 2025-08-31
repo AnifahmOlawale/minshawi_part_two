@@ -1,0 +1,116 @@
+﻿1,Al-Fatihah,سُوْرَۃُ الفَاتِحَة,The Opening,1,7,7
+2,Al-Baqarah,سُوْرَۃُ البَقَرَة,The Cow,8,293,286
+3,Al-Imran,سُوْرَۃ آلِ عِمْرَان,The Family Of Imran,294,493,200
+4,An-Nisa',سُوْرَۃُ النِّسَاء,Women,494,669,176
+5,Al-Ma'idah,سُوْرَۃُ المَائِدَة,The Food,670,789,120
+6,Al-An`Am,سُوْرَۃُ الأَنْعَام,The Cattle,790,954,165
+7,Al-A`Raf,سُوْرَۃُ الأَعْرَاف,The Elevated Places,955,1160,206
+8,Al-Anfal,سُوْرَۃُ الأَنْفَال,The Spoils Of War,1161,1235,75
+9,At-Taubah,سُوْرَۃُ التَّوْبَة,Repentance,1236,1364,129
+10,Yunus,سُوْرَۃ يُونُس,Jonah,1365,1473,109
+11,Hud,سُوْرَۃ هُود,Hud,1474,1596,123
+12,Yusuf,سُوْرَۃ يُوسُف,Joseph,1597,1707,111
+13,Ar-Ra`D,سُوْرَۃ الرَّعْد,The Thunder,1708,1750,43
+14,Ibrahim,سُوْرَۃُ إِبْرَاهِيم,Abraham,1751,1802,52
+15,Al-Hijr,سُوْرَۃُ الحِجْر,The Rock,1803,1901,99
+16,An-Nahl,سُوْرَۃُ النَّحْل,The Bee,1902,2029,128
+17,Al-Isra,سُوْرَۃُ الإِسْرَاء,The Night Journey,2030,2140,111
+18,Al-Kahf,سُوْرَۃ الكَهْف,The Cave,2141,2250,110
+19,Maryam,سُوْرَۃ مَرْيَم,Mary,2251,2348,98
+20,Ta Ha,سُوْرَۃ طٰهٰ,Ta Ha,2349,2483,135
+21,Al-Anbiya',سُوْرَۃُ الأَنْبِيَاء,The Prophets,2484,2595,112
+22,Al-Hajj,سُوْرَۃ الحَجّ,The Pilgrimage,2596,2673,78
+23,Al-Mu'minun,سُوْرَۃُ المُؤْمِنُون,The Believers,2674,2791,118
+24,An-Nur,سُوْرَۃ النُّور,The Light,2792,2855,64
+25,Al-Furqan,سُوْرَۃ الفُرْقَان,The Criterion,2856,2932,77
+26,Ash-Shu`Ara',سُوْرَۃُ الشُّعَرَاء,The Poets,2933,3159,227
+27,An-Naml,سُوْرَۃُ النَّمْل,The Ant,3160,3252,93
+28,Al-Qasas,سُوْرَۃُ القَصَص,The Narrative,3253,3340,88
+29,Al-`Ankabut,سُوْرَۃُ العَنْكَبُوت,The Spider,3341,3409,69
+30,Ar-Rum,سُوْرَۃ الرُّوم,The Romans,3410,3469,60
+31,Luqman,سُوْرَۃ لُقْمَان,Lukman,3470,3503,34
+32,As-Sajdah,سُوْرَۃُ السَّجْدَة,The Adoration,3504,3533,30
+33,Al-Ahzab,سُوْرَۃُ الأَحْزَاب,The Allies,3534,3606,73
+34,Saba',سُوْرَۃ سَبَأ,Sheba,3607,3660,54
+35,Fatir,سُوْرَۃ فَاطِر,The Creator,3661,3705,45
+36,Ya Sin,سُوْرَۃ يٰس,Ya Sin,3706,3788,83
+37,As-Saffat,سُوْرَۃُ الصَّافَّات,The Rangers,3789,3970,182
+38,Sad,سُوْرَۃ ص,Sad,3971,4058,88
+39,Az-Zumar,سُوْرَۃُ الزُّمَر,The Companies,4059,4133,75
+40,Ghafir,سُوْرَۃ غَافِر,The Forgiving One,4134,4218,85
+41,Fussilat,سُوْرَۃ فُصِّلَت,Revelations Well Expounded,4219,4272,54
+42,Ash-Shura,سُوْرَۃُ الشُّورىٰ,The Counsel,4273,4325,53
+43,Az-Zukhruf,سُوْرَۃُ الزُّخْرُف,The Embellishment,4326,4414,89
+44,Ad-Dukhan,سُوْرَۃ الدُّخَان,The Evident Smoke,4415,4473,59
+45,Al-Jathiyah,سُوْرَۃ الجَاثِيَة,The Kneeling,4474,4510,37
+46,Al-Ahqaf,سُوْرَۃُ الأَحْقَاف,The Sandhills,4511,4545,35
+47,Muhammad,سُوْرَۃ مُحَمَّد,Muhammad,4546,4583,38
+48,Al-Fath,سُوْرَۃُ الفَتْح,The Victory,4584,4612,29
+49,Al-Hujurat,سُوْرَۃُ الحُجُرَات,The Chambers,4613,4630,18
+50,Qaf,سُوْرَۃ ق,Qaf,4631,4675,45
+51,Ad-Dhariyat,سُوْرَۃُ الذَّارِيَات,The Scatterers,4676,4735,60
+52,At-Tur,سُوْرَۃ الطُّور,The Mountain,4736,4784,49
+53,An-Najm,سُوْرَۃُ النَّجْم,The Star,4785,4846,62
+54,Al-Qamar,سُوْرَۃُ القَمَر,The Moon,4847,4901,55
+55,Ar-Rahman,سُوْرَۃ الرَّحْمَٰن,The Merciful,4902,4979,78
+56,Al-Waqi`Ah,سُوْرَۃُ الوَاقِعَة,That Which is Coming,4980,5075,96
+57,Al-Hadid,سُوْرَۃُ الحَدِيد,The Iron,5076,5104,29
+58,Al-Mujadilah,سُوْرَۃُ المُجَادِلَة,She Who Pleaded,5105,5126,22
+59,Al-Hashr,سُوْرَۃُ الحَشْر,The Exile,5127,5150,24
+60,Al-Mumtahanah,سُوْرَۃُ المُمْتَحَنَة,She Who is Tested,5151,5163,13
+61,As-Saff,سُوْرَۃُ الصَّفّ,The Ranks,5164,5177,14
+62,Al-Jumu`Ah,سُوْرَۃُ الجُمُعَة,The Day of Congregation,5178,5188,11
+63,Al-Munafiqun,سُوْرَۃُ المُنَافِقُون,The Hypocrites,5189,5199,11
+64,At-Taghabun,سُوْرَۃُ التَّغَابُن,The Cheating,5200,5217,18
+65,"At-Talaq,",سُوْرَۃُ الطَّلَاق,The Divorce,5218,5229,12
+66,At-Tahrim,سُوْرَۃُ التَّحْرِيم,The Prohibition,5230,5241,12
+67,Al-Mulk,سُوْرَۃُ المُلْك,The Kingdom,5242,5271,30
+68,Al-Qalam,سُوْرَۃ القَلَم,The Pen,5272,5323,52
+69,Al-Haqqah,سُوْرَۃ الحَاقَّة,The Inevitable,5324,5375,52
+70,Al-Ma`Arij,سُوْرَۃُ المَعَارِج,The Ladders,5376,5419,44
+71,Nuh,سُوْرَۃ نُوح,Noah,5420,5447,28
+72,Al-Jinn,سُوْرَۃُ الجِنّ,The Jinn,5448,5475,28
+73,Al-Muzammil,سُوْرَۃُ المُزَّمِّل,The Mantled One,5476,5495,20
+74,Al-Mudathir,سُوْرَۃُ المُدَّثِّر,The Clothed One,5496,5551,56
+75,Al-Qiyamah,سُوْرَۃُ القِيَامَة,The Resurrection,5552,5591,40
+76,Al-Insane,سُوْرَۃُ الإِنْسَان,The Man,5592,5622,31
+77,Al-Mursalat,سُوْرَۃُ المُرْسَلَات,The Emissaries,5623,5672,50
+78,An-Naba',سُوْرَۃُ النَّبَأ,The Tidings,5673,5712,40
+79,An-Nazi`At,سُوْرَۃُ النَّازِعَات,Those Who Pull Out,5713,5758,46
+80,`Abasa,سُوْرَۃ عَبَسَ,He Frowned,5759,5800,42
+81,At-Takwir,سُوْرَۃُ التَّكْوِير,The Cessation,5801,5829,29
+82,Al-Infitar,سُوْرَۃُ الإِنْفِطَار,The Cleaving Asunder,5830,5848,19
+83,Al-Mutaffifeen,سُوْرَۃُ المُطَفِّفِين,The Defrauders,5849,5884,36
+84,Al-Inshiqaq,سُوْرَۃُ الإِنْشِقَاق,The Rending,5885,5909,25
+85,Al-Buruj,سُوْرَۃُ البُرُوج,the Constellations,5910,5931,22
+86,At-Tariq,سُوْرَۃُ الطَّارِق,The Night-Comer,5932,5948,17
+87,Al-A`La,سُوْرَۃُ الأَعْلَىٰ,The Most High,5949,5967,19
+88,Al-Ghashiya,سُوْرَۃُ الغَاشِيَة,The Overwhelming Calamity,5968,5993,26
+89,Al-Fajr,سُوْرَۃُ الفَجْر,The Dawn,5994,6023,30
+90,Al-Balad,سُوْرَۃُ البَلَد,The City,6024,6043,20
+91,Ash-Shams,سُوْرَۃُ الشَّمْس,The Sun,6044,6058,15
+92,Al-Layl,سُوْرَۃُ اللَّيْل,The Night,6059,6079,21
+93,Ad-Duha,سُوْرَۃُ الضُّحَىٰ,The Early Hours,6080,6090,11
+94,Ash-Sharh,سُوْرَۃُ الشَّرْح,The Expansion,6091,6098,8
+95,At-Tin,سُوْرَۃُ التِّين,The Fig,6099,6106,8
+96,Al-`Alaq,سُوْرَۃُ العَلَق,The Clot,6107,6125,19
+97,Al-Qadr,سُوْرَۃُ القَدْر,The Majesty,6126,6130,5
+98,Al-Bayyinah,سُوْرَۃُ البَيِّنَة,The Proof,6131,6138,8
+99,Az-Zalzala,سُوْرَۃُ الزَّلْزَلَة,The Shaking,6139,6146,8
+100,Al-`Adiyat,سُوْرَۃُ العَادِيَات,The Assaulters,6147,6157,11
+101,Al-Qari`Ah,سُوْرَۃُ القَارِعَة,The Terrible Calamity,6158,6168,11
+102,At-Takathur,سُوْرَۃُ التَّكَاثُر,Worldly Gain,6169,6176,8
+103,Al-`Asr,سُوْرَۃُ العَصْر,Time,6177,6179,3
+104,Al-Humazah,سُوْرَۃُ الهُمَزَة,The Slanderer,6180,6188,9
+105,Al-Fil,سُوْرَۃُ الفِيل,The Elephant,6189,6193,5
+106,Al-Quraish,سُوْرَۃ قُرَيْش,The Quraish,6194,6197,4
+107,Al-Ma`Un,سُوْرَۃُ المَاعُون,The Daily Necessaries,6198,6204,7
+108,Al-Kauthar,سُوْرَۃُ الكَوْثَر,Abundance,6205,6207,3
+109,Al-Kafirun,سُوْرَۃُ الكَافِرُون,The Unbelievers,6208,6213,6
+110,An-Nasr,سُوْرَۃُ النَّصْر,The Help,6214,6216,3
+111,Al-Masad,سُوْرَۃُ المَسَد,The Palm Fibre,6217,6221,5
+112,Al-Ikhlas,سُوْرَۃُ الإِخْلَاص,The Unity,6222,6225,4
+113,Al-Falaq,سُوْرَۃُ الفَلَق,The Daybreak,6226,6230,5
+114,An-Nas,سُوْرَۃُ النَّاس,The Men,6231,6236,6
+,Emotional Dua 1,,,,,
+,Emotional Dua 2,,,,,
