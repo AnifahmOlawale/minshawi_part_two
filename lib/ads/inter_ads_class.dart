@@ -10,7 +10,7 @@ class InterstitialAdmob {
 
   String adUnitIdI = isAndroid
       ? 'ca-app-pub-4416029850245700/7378094549'
-      : 'ca-app-pub-4416029850245700/5586565604';
+      : 'ca-app-pub-4416029850245700/4042932536';
 
   void loadAdInterstitial() {
     InterstitialAd.load(

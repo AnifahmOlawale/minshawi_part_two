@@ -9,7 +9,7 @@ class BannerAdsClass {
   //Banner Ads Unit
   final String bannerAdsUnit = isAndroid
       ? "ca-app-pub-4416029850245700/1391636931"
-      : "ca-app-pub-4416029850245700/1482032588";
+      : "ca-app-pub-4416029850245700/6735995749";
 
   BannerAd? get bannerAd => _bannerAd;
 

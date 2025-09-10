@@ -54,7 +54,7 @@
   		<string>audio</string>
 	</array>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-4416029850245700~9525810615</string>
+	<string>ca-app-pub-4416029850245700~7982177546</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app needs access to your location to provide location-based services.</string>
 </dict>
