@@ -92,6 +92,9 @@ Future<void> setFontSize(BuildContext context) {
                         fontFamily: 'UthmanicHafs',
                         fontSize: quranSettings.translationFontSize),
                   ),
+                  const SizedBox(
+                    height: 35,
+                  ),
                 ],
               ),
             ),

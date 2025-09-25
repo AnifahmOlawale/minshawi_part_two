@@ -43,7 +43,7 @@ class UpdateAlertDialog extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   foregroundColor:
-                      themeColorProvider.currentTheme != SetTheme.colured.name
+                      themeColorProvider.currentTheme == SetTheme.dark.name
                           ? Colors.white
                           : themeColorProvider.background,
                   minimumSize:

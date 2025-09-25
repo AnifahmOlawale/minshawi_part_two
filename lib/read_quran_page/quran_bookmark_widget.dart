@@ -160,37 +160,48 @@ class _QuranBookmarkWidgetState extends State<QuranBookmarkWidget> {
                                   builder: (context) => ReadQuran(),
                                 ));
                           },
-                          child: Card(
-                            color: themeColorProvider.card,
-                            child: ListTile(
-                              textColor: Colors.white,
-                              title: Text.rich(
-                                TextSpan(
-                                  children: [
+                          child: Column(
+                            children: [
+                              Card(
+                                color: themeColorProvider.card,
+                                child: ListTile(
+                                  textColor: Colors.white,
+                                  title: Text.rich(
                                     TextSpan(
-                                        text: quranCsv.listOfSurahs[quranCsv
-                                                .bookmarks[index].keys.first]
-                                            .elementAt(1)),
-                                    TextSpan(
-                                        text:
-                                            "\nQur'an: $surahIndex | Verse: ${quranCsv.bookmarks[index].values.first + 1}",
-                                        style: TextStyle(fontSize: 12))
-                                  ],
+                                      children: [
+                                        TextSpan(
+                                            text: quranCsv.listOfSurahs[quranCsv
+                                                    .bookmarks[index]
+                                                    .keys
+                                                    .first]
+                                                .elementAt(1)),
+                                        TextSpan(
+                                            text:
+                                                "\nQur'an: $surahIndex | Verse: ${quranCsv.bookmarks[index].values.first + 1}",
+                                            style: TextStyle(fontSize: 12))
+                                      ],
+                                    ),
+                                  ),
+                                  trailing: Text(
+                                    arabicSurahFont(surahIndex),
+                                    style: TextStyle(
+                                        fontFamily: 'ArabicSurah',
+                                        fontSize: 35),
+                                  ),
                                 ),
                               ),
-                              trailing: Text(
-                                arabicSurahFont(surahIndex),
-                                style: TextStyle(
-                                    fontFamily: 'ArabicSurah', fontSize: 35),
-                              ),
-                            ),
+                              if (index == quranCsv.bookmarks.length - 1)
+                                const SizedBox(
+                                  height: 150,
+                                ),
+                            ],
                           ),
                         ),
                       ),
                     );
                   },
                 ),
-              )
+              ),
             ],
           ),
         ),

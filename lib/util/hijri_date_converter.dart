@@ -50,7 +50,7 @@ Future<void> converthijriDateSheet(BuildContext context,
                 style: TextStyle(fontSize: 18),
               ),
               const SizedBox(
-                height: 10,
+                height: 35,
               )
             ],
           ),

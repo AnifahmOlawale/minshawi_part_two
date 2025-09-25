@@ -35,30 +35,36 @@ Future<void> setTransSheet(BuildContext context) {
                   ),
                 ),
                 Expanded(
-                  child: ListView.builder(
-                    //shrinkWrap: true,
-                    itemCount: quranCsv.transName.length,
-                    itemBuilder: (context, index) {
-                      return Card(
-                        child: RadioListTile.adaptive(
-                          value: quranCsv.transName.elementAt(index),
-                          groupValue: quranCsv.currentQuranTrans,
-                          title: Text(
-                            quranCsv.transName.elementAt(index),
-                            style: TextStyle(fontSize: 18),
-                          ),
-                          subtitle: Text(
-                            quranCsv.transLang.elementAt(index),
-                            style: TextStyle(color: Colors.red),
-                          ),
-                          onChanged: (value) {
-                            quranCsv.setChangeTrans(value.toString());
-                          },
-                        ),
-                      );
+                  child: RadioGroup<String>(
+                    groupValue: quranCsv.currentQuranTrans,
+                    onChanged: (value) {
+                      if (value != null) {
+                        quranCsv.setChangeTrans(value);
+                      }
                     },
+                    child: ListView(
+                      children: List.generate(
+                        quranCsv.transName.length,
+                        (index) => Card(
+                          child: RadioListTile<String>(
+                            value: quranCsv.transName.elementAt(index),
+                            title: Text(
+                              quranCsv.transName.elementAt(index),
+                              style: const TextStyle(fontSize: 18),
+                            ),
+                            subtitle: Text(
+                              quranCsv.transLang.elementAt(index),
+                              style: const TextStyle(color: Colors.red),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                )
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
               ],
             ),
           ),

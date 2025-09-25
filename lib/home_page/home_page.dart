@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage>
     "",
     "Read Qur'an",
     "Settings",
-    "Download the other parts",
+    "Download the other part",
     "Download More Qur'an Apps",
     "Rate App",
   ];

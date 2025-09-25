@@ -23,53 +23,54 @@ Future<void> setFont(BuildContext context) {
                 children: [
                   //
                   Text("Qur'an Font"),
-                  Card(
-                    child: RadioListTile.adaptive(
-                      value: "UthmanicHafs",
+                  RadioGroup(
                       groupValue: quranSettings.quranFont,
-                      title: Text("UthmanicHafs"),
-                      subtitle: Text(
-                        "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
-                        textAlign: TextAlign.right,
-                        style:
-                            TextStyle(fontFamily: 'UthmanicHafs', fontSize: 30),
-                      ),
                       onChanged: (value) {
                         quranSettings.setQuranFont(value!);
                       },
-                    ),
-                  ),
-                  Card(
-                    child: RadioListTile.adaptive(
-                      value: "me_quran",
-                      groupValue: quranSettings.quranFont,
-                      title: Text("me_quran"),
-                      subtitle: Text(
-                        "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
-                        textAlign: TextAlign.right,
-                        style: TextStyle(fontFamily: 'me_quran', fontSize: 30),
-                      ),
-                      onChanged: (value) {
-                        quranSettings.setQuranFont(value!);
-                      },
-                    ),
-                  ),
-                  Card(
-                    child: RadioListTile.adaptive(
-                      value: "AmiriQuran",
-                      groupValue: quranSettings.quranFont,
-                      title: Text("AmiriQuran"),
-                      subtitle: Text(
-                        "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
-                        textAlign: TextAlign.right,
-                        style:
-                            TextStyle(fontFamily: 'AmiriQuran', fontSize: 30),
-                      ),
-                      onChanged: (value) {
-                        quranSettings.setQuranFont(value!);
-                      },
-                    ),
-                  )
+                      child: Column(
+                        children: [
+                          Card(
+                            child: RadioListTile.adaptive(
+                              value: "UthmanicHafs",
+                              title: Text("UthmanicHafs"),
+                              subtitle: Text(
+                                "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
+                                textAlign: TextAlign.right,
+                                style: TextStyle(
+                                    fontFamily: 'UthmanicHafs', fontSize: 30),
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: RadioListTile.adaptive(
+                              value: "me_quran",
+                              title: Text("me_quran"),
+                              subtitle: Text(
+                                "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
+                                textAlign: TextAlign.right,
+                                style: TextStyle(
+                                    fontFamily: 'me_quran', fontSize: 30),
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: RadioListTile.adaptive(
+                              value: "AmiriQuran",
+                              title: Text("AmiriQuran"),
+                              subtitle: Text(
+                                "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
+                                textAlign: TextAlign.right,
+                                style: TextStyle(
+                                    fontFamily: 'AmiriQuran', fontSize: 30),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 35,
+                          ),
+                        ],
+                      ))
                 ],
               ),
             ),

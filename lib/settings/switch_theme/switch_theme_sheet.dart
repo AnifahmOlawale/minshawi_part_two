@@ -16,7 +16,7 @@ Future<void> themeSheet(BuildContext context) {
         return Container(
           padding: const EdgeInsets.all(15),
           width: double.infinity,
-          height: 170,
+          height: 200,
           child: Column(
             spacing: 10,
             children: [

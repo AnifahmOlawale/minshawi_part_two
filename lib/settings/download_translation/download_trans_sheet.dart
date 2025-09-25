@@ -154,7 +154,7 @@ Future<void> downloadTransSheet(BuildContext context) {
                             textAlign: TextAlign.center,
                           ),
                           const SizedBox(
-                            height: 2,
+                            height: 35,
                           )
                         ],
                       ),

@@ -19,7 +19,9 @@ Widget appInfo(BuildContext context) {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             image: DecorationImage(
-                image: AssetImage("assets/images/ios_logo.jpg"))),
+                image: isAndroid
+                    ? AssetImage("assets/images/Muhammad_Siddiq_Minshawi.jpg")
+                    : AssetImage("assets/images/ios_logo.jpg"))),
       ),
       SizedBox(
         height: 20,

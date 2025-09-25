@@ -90,8 +90,8 @@ Widget quranContainer(
                         style: {
                           "body": Style(
                             textAlign: TextAlign.left,
-                            color: themeColorProvider.currentTheme !=
-                                    SetTheme.colured.name
+                            color: themeColorProvider.currentTheme ==
+                                    SetTheme.dark.name
                                 ? Colors.white
                                 : themeColorProvider.quranTrans,
                             fontSize:

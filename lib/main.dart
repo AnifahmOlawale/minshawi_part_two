@@ -146,9 +146,10 @@ class MyApp extends StatelessWidget {
               Theme.of(context).scaffoldBackgroundColor,
         ),
         appBarTheme: AppBarTheme(
-          color: themeColorProvider.secondary,
+          backgroundColor: themeColorProvider.secondary,
           foregroundColor: Colors.white,
         ),
+        textButtonTheme: TextButtonThemeData(),
         useMaterial3: true,
       ),
       darkTheme: themeColorProvider.theme,

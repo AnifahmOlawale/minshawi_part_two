@@ -53,6 +53,8 @@ class ThemeColor extends ChangeNotifier {
       secondary: Color.fromRGBO(23, 47, 81, 1),
       brightness: Brightness.dark,
     ),
+    textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(foregroundColor: Colors.white)),
     useMaterial3: true,
   );
   ThemeMode _themeMode = ThemeMode.dark;
@@ -166,6 +168,8 @@ class ThemeColor extends ChangeNotifier {
             secondary: Color.fromRGBO(23, 47, 81, 1),
             brightness: Brightness.dark,
           ),
+          textButtonTheme: TextButtonThemeData(
+              style: TextButton.styleFrom(foregroundColor: Colors.white)),
           useMaterial3: true,
         );
         _themeMode = ThemeMode.dark;
