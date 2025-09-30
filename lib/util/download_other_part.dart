@@ -28,7 +28,7 @@ class DownloadOtherPart {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   foregroundColor:
-                      themeColorProvider.currentTheme != SetTheme.colured.name
+                      themeColorProvider.currentTheme == SetTheme.dark.name
                           ? Colors.white
                           : themeColorProvider.background,
                   minimumSize:

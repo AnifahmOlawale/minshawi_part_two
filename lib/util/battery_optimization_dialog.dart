@@ -20,7 +20,7 @@ class BatteryOptimizationDialog {
             onPressed: () => Navigator.pop(context),
             style: TextButton.styleFrom(
               foregroundColor:
-                  themeColorProvider.currentTheme != SetTheme.colured.name
+                  themeColorProvider.currentTheme == SetTheme.dark.name
                       ? Colors.white
                       : themeColorProvider.background,
             ),
@@ -34,7 +34,7 @@ class BatteryOptimizationDialog {
             },
             style: TextButton.styleFrom(
               foregroundColor:
-                  themeColorProvider.currentTheme != SetTheme.colured.name
+                  themeColorProvider.currentTheme == SetTheme.dark.name
                       ? Colors.white
                       : themeColorProvider.background,
             ),

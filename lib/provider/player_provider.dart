@@ -8,6 +8,7 @@ import 'package:quran_app/util/hive_box.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 import 'dart:math';
+import 'package:flutter/services.dart';
 
 class PlayerProvider extends ChangeNotifier {
   QuranCsv quranCsv = QuranCsv();
@@ -56,13 +57,16 @@ class PlayerProvider extends ChangeNotifier {
   }
 
   Future playCurrent() async {
+    final byteData = await rootBundle
+        .load('assets/images/images/Muhammad_Siddiq_Minshawi.jpg');
+    final Uint8List imageBytes = byteData.buffer.asUint8List();
     final fileName = '${_currentPlayerIndex! + 1}.mp3';
     // Update notification MediaItem with correct duration
     MediaItem updatedItem = MediaItem(
       id: fileName,
       title: 'Surah $_currentPlayerTransSurahName',
       album: appName,
-      artUri: Uri.parse('file:///assets/images/Muhammad_Siddiq_Minshawi.jpg'),
+      artUri: Uri.dataFromBytes(imageBytes, mimeType: 'image/png'),
     );
 
     if (_audioHandler.mediaItem.value?.id != updatedItem.id) {
@@ -74,8 +78,7 @@ class PlayerProvider extends ChangeNotifier {
             id: fileName,
             title: 'Surah $_currentPlayerTransSurahName',
             album: appName,
-            artUri:
-                Uri.parse('file:///assets/images/Muhammad_Siddiq_Minshawi.jpg'),
+            artUri: Uri.dataFromBytes(imageBytes, mimeType: 'image/png'),
           ),
         ),
         initialPosition: _lastPosition,

@@ -29,7 +29,7 @@ Widget appInfo(BuildContext context) {
       Padding(
         padding: const EdgeInsets.all(8.0),
         child: Text(
-          "$appName ($part)",
+          "$appName\n($part)",
           textAlign: TextAlign.center,
           style: TextStyle(color: themeColorProvider.text, fontSize: 18),
         ),
