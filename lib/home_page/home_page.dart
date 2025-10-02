@@ -261,7 +261,7 @@ class _HomePageState extends State<HomePage>
           child: Stack(
             children: [
               //Home
-              homeNavigationList(
+              HomeNavigationList(
                 playerListPage: _playerListPage,
                 homeListIcons: _homeListIcons,
                 homeListTitle: _homeListTitle,
@@ -272,7 +272,7 @@ class _HomePageState extends State<HomePage>
 
               //Surah List
               if (quranCsv.listOfSurahsPart.isNotEmpty)
-                playerSurahList(
+                PlayerSurahList(
                   quranCsv: quranCsv,
                   isSearch: _isSearch,
                   playerListPage: _playerListPage,
@@ -284,7 +284,7 @@ class _HomePageState extends State<HomePage>
               //Player Page
               SlideTransition(
                 position: _offsetAnimation,
-                child: player(
+                child: PlayerPage(
                   themeColorProvider: themeColorProvider,
                   quranCsv: quranCsv,
                 ),

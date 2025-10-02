@@ -19,7 +19,6 @@ Future<void> setFontSize(BuildContext context) {
             child: Container(
               padding: const EdgeInsets.all(15),
               width: double.infinity,
-              //height: 190,
               child: Column(
                 spacing: 10,
                 children: [

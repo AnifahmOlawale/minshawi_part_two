@@ -17,3 +17,6 @@ final downlaodTransNotifier =
 
 ValueNotifier<bool> isDownloading =
     ValueNotifier<bool>(false); //FOR TARNSLATION DOWNLOAD STATUES
+
+ValueNotifier<DateTime?> audioSleepTimer =
+    ValueNotifier(null); //FOR AUDIO SLEEP TIME

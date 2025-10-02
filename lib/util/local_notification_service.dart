@@ -18,8 +18,8 @@ class LocalNotificationService {
 
     //INITIALIZE TIMEZONE
     tz.initializeTimeZones();
-    final String currentTimeZoneName = await FlutterTimezone.getLocalTimezone();
-    tz.setLocalLocation(tz.getLocation(currentTimeZoneName));
+    final currentTimeZoneName = await FlutterTimezone.getLocalTimezone();
+    tz.setLocalLocation(tz.getLocation(currentTimeZoneName.identifier));
 
     //Prepare Android init settings
     const initSettingsAndroid = AndroidInitializationSettings(

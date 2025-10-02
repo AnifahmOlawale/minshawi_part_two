@@ -7,15 +7,25 @@ import 'package:quran_app/provider/theme_color_provider.dart';
 import 'package:quran_app/widget_tree/listwidget.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-Widget playerSurahList({
-  required QuranCsv quranCsv,
-  required bool isSearch,
-  required bool playerListPage,
-  required ItemScrollController? listScrollController,
-  required bool isSearchControllerEmpty,
-  required void Function() onCardClick,
-}) {
-  return Builder(builder: (context) {
+class PlayerSurahList extends StatelessWidget {
+  final QuranCsv quranCsv;
+  final bool isSearch;
+  final bool playerListPage;
+  final ItemScrollController? listScrollController;
+  final bool isSearchControllerEmpty;
+  final void Function() onCardClick;
+  const PlayerSurahList({
+    super.key,
+    required this.quranCsv,
+    required this.isSearch,
+    required this.playerListPage,
+    required this.listScrollController,
+    required this.isSearchControllerEmpty,
+    required this.onCardClick,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     final themeColorProvider = Provider.of<ThemeColor>(context);
     final playerProvider = Provider.of<PlayerProvider>(context);
 
@@ -104,5 +114,5 @@ Widget playerSurahList({
         ),
       ),
     );
-  });
+  }
 }

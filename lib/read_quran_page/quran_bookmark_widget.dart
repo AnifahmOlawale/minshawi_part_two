@@ -45,8 +45,8 @@ class _QuranBookmarkWidgetState extends State<QuranBookmarkWidget> {
                               onPressed: () => Navigator.pop(context),
                               style: TextButton.styleFrom(
                                 foregroundColor:
-                                    themeColorProvider.currentTheme !=
-                                            SetTheme.colured.name
+                                    themeColorProvider.currentTheme ==
+                                            SetTheme.dark.name
                                         ? Colors.white
                                         : themeColorProvider.background,
                               ),
@@ -66,8 +66,8 @@ class _QuranBookmarkWidgetState extends State<QuranBookmarkWidget> {
                             },
                             style: TextButton.styleFrom(
                               foregroundColor:
-                                  themeColorProvider.currentTheme !=
-                                          SetTheme.colured.name
+                                  themeColorProvider.currentTheme ==
+                                          SetTheme.dark.name
                                       ? Colors.white
                                       : themeColorProvider.background,
                             ),
@@ -160,41 +160,30 @@ class _QuranBookmarkWidgetState extends State<QuranBookmarkWidget> {
                                   builder: (context) => ReadQuran(),
                                 ));
                           },
-                          child: Column(
-                            children: [
-                              Card(
-                                color: themeColorProvider.card,
-                                child: ListTile(
-                                  textColor: Colors.white,
-                                  title: Text.rich(
+                          child: Card(
+                            color: themeColorProvider.card,
+                            child: ListTile(
+                              textColor: Colors.white,
+                              title: Text.rich(
+                                TextSpan(
+                                  children: [
                                     TextSpan(
-                                      children: [
-                                        TextSpan(
-                                            text: quranCsv.listOfSurahs[quranCsv
-                                                    .bookmarks[index]
-                                                    .keys
-                                                    .first]
-                                                .elementAt(1)),
-                                        TextSpan(
-                                            text:
-                                                "\nQur'an: $surahIndex | Verse: ${quranCsv.bookmarks[index].values.first + 1}",
-                                            style: TextStyle(fontSize: 12))
-                                      ],
-                                    ),
-                                  ),
-                                  trailing: Text(
-                                    arabicSurahFont(surahIndex),
-                                    style: TextStyle(
-                                        fontFamily: 'ArabicSurah',
-                                        fontSize: 35),
-                                  ),
+                                        text: quranCsv.listOfSurahs[quranCsv
+                                                .bookmarks[index].keys.first]
+                                            .elementAt(1)),
+                                    TextSpan(
+                                        text:
+                                            "\nQur'an: $surahIndex | Verse: ${quranCsv.bookmarks[index].values.first + 1}",
+                                        style: TextStyle(fontSize: 12))
+                                  ],
                                 ),
                               ),
-                              if (index == quranCsv.bookmarks.length - 1)
-                                const SizedBox(
-                                  height: 150,
-                                ),
-                            ],
+                              trailing: Text(
+                                arabicSurahFont(surahIndex),
+                                style: TextStyle(
+                                    fontFamily: 'ArabicSurah', fontSize: 35),
+                              ),
+                            ),
                           ),
                         ),
                       ),
