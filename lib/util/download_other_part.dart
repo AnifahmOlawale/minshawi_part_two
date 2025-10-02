@@ -18,7 +18,7 @@ class DownloadOtherPart {
       builder: (context) {
         return AlertDialog(
           title: Text(
-            "Download Other Parts",
+            "Download the Other Part",
             style: TextStyle(fontSize: 18),
           ),
           content: Column(
